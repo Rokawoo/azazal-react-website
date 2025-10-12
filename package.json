@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fontsource/fredoka-one": "^5.2.5",
+    "@fontsource/roboto": "^5.2.8"
+  }
+}
