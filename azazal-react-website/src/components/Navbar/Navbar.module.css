@@ -1,0 +1,123 @@
+@import "../../vars.css";
+
+.backgroundColor {
+  background-color: transparent;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 61px;
+  z-index: 2;
+  margin: 0 10%;
+}
+
+.navbarImg {
+  width: 300px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+  margin-top: -70px;
+}
+
+.navbarImg:hover {
+  transform: scale(1.1);
+}
+
+.menuBtn {
+  display: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItems {
+  display: flex;
+  gap: 47px;
+  list-style: none;
+}
+
+.menuItems a {
+  font-size: 25px;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.menuItem {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuItem:hover {
+  color: var(--color-accent-2);
+  text-shadow: 2px 2px 4px rgba(var(--color-accent-2-rgb), 0.6);
+  text-decoration: underline;
+  text-decoration-thickness: 0.14em; 
+  font-size: 1.1em;
+  font-weight: 500;
+  transform: translateY(-2px) translateX(5%);
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbarImg {
+    width: 40vw;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border: 5px solid transparent;
+    border-image: repeating-linear-gradient(
+      45deg,
+      var(--color-accent-1) 0 20px,
+      var(--color-accent-2) 20px 40px
+    ) 5;
+    border-radius: 10px;
+    background: var(--color-primary);
+    background: linear-gradient(
+      0deg,
+      rgba(var(--color-primary-rgb), 0.2) 0%,
+      rgba(var(--color-primary-rgb), 1) 100%
+    );
+    padding: 24px 33px;
+    box-shadow: 0 0 4px 0 rgba(var(--color-primary), 0.25);
+  }
+
+  .menuItem:hover {
+    transform: translateY(-2px);
+  }
+
+  .menuOpen {
+    display: flex;
+    z-index: 1;
+  }
+}
