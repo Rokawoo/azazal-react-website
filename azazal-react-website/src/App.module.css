@@ -1,0 +1,51 @@
+@import "./vars.css";
+
+.App {
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Text Selection */ 
+::selection {
+  color: var(--color-text-secondary);
+  background: var(--color-light);
+}
+
+::-moz-selection { /* For Firefox */
+  color: var(--color-text-secondary);
+  background: var(--color-light);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--color-scrollbar-thumb);
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+  background: repeating-linear-gradient(
+    225deg,
+    var(--color-accent-1) 0 10%,
+    var(--color-accent-2) 0 20%
+  );
+}
+
+@-moz-document url-prefix() { /* For Firefox */
+  html {
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-scrollbar-thumb) var(--color-dark);
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  ::-webkit-scrollbar {
+      display: none;
+    }
+}

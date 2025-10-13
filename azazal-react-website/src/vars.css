@@ -1,0 +1,30 @@
+:root {
+    /* Colors */
+    --color-text-primary: #fff;
+    --color-text-primary-rgb: 255, 255, 255;
+    --color-text-secondary: #000;
+    --color-text-secondary-rgb: 0, 0, 0;
+
+    --color-primary: #000;
+    --color-primary-rgb: 0, 0, 0;
+
+    --color-secondary: #fff;
+    --color-secondary-rgb: 255, 255, 255;
+
+    
+    --color-accent-1: #fff;
+    --color-accent-1-rgb: 255, 255, 255;
+    --color-accent-2: #c6d0eb;
+    --color-accent-2-rgb: 198, 208, 235;
+
+    --color-light: #e0e8ff;
+    --color-light-rgb: 224, 232, 255;
+
+    --color-dark: #c6d0eb;
+    --color-dark-rgb: 198, 208, 235;
+
+    --color-scrollbar-thumb: #555555;
+
+    /* Fonts */
+    --font-comfortaa: 'Comfortaa Variable';
+}
