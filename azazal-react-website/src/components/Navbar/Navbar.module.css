@@ -21,7 +21,8 @@
   width: 300px;
   flex-shrink: 0;
   transition: transform 0.3s ease-in-out;
-  margin-top: -70px;
+  margin-top: -81px;
+  margin-left: -28px;
 }
 
 .navbarImg:hover {
@@ -50,6 +51,7 @@
 
 .menuItem {
   text-decoration: none;
+  text-decoration-color: transparent;
   transition: all 0.3s ease-in-out;
 }
 
