@@ -1,0 +1,33 @@
+@import "../../vars.css";
+@import "../../wave.css";
+
+.backgroundColor {
+  background-color: var(--color-secondary);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  border-radius: 15px;
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 34px;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 5%;
+  color: var(--color-text-secondary);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
