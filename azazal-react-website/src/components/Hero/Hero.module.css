@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 0;
-  min-height: 1080px;
+  min-height: 110.5vh;
   
   background-image: url('../../assets/hero/heroImage.png');
   background-size: cover;
@@ -27,7 +27,7 @@
   height: 150px;
   z-index: 2;
   
-  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,150 L0,50 Q360,120 720,50 T1440,50 L1440,150 Z" fill="%23000000"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,150 L0,70 Q360,110 720,70 T1440,70 L1440,150 Z" fill="%23000000"/></svg>');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: bottom;

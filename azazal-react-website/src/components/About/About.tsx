@@ -15,8 +15,6 @@ export const About = () => {
 
   return (
     <div className={styles.backgroundColor}>
-      {/* <div className={`${styles.wave} ${styles.secondary}`}></div> */}
-
       <section className={styles.container} id="about">
         <h2 className={styles.title}>About Me</h2>
         <div className={styles.content}>
@@ -29,29 +27,18 @@ export const About = () => {
             onClick={handleClick}
             draggable="false"
           />
-          <ul className={styles.aboutItems}>
-            <li className={styles.aboutItem}>
-              <img src={getAssetUrl("about/c.webp")} alt="c-icon" draggable="false"/>
-              <div className={styles.aboutItemText}>
-                <h3>Hiya!</h3>
-                <p>Lorem Ipsum<br />Lorem Ipsum</p>
-              </div>
-            </li>
-            <li className={styles.aboutItem}>
-              <img src={getAssetUrl("about/m.webp")} alt="m-icon" draggable="false"/>
-              <div className={styles.aboutItemText}>
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem Ipsum<br />Lorem Ipsum</p>
-              </div>
-            </li>
-            <li className={styles.aboutItem}>
-              <img src={getAssetUrl("about/y.webp")} alt="y-icon" draggable="false"/>
-              <div className={styles.aboutItemText}>
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem Ipsum<br />Lorem Ipsum</p>
-              </div>
-            </li>
-          </ul>
+          <div className={styles.textBox}>
+            <p>
+              Lorem ipsum dolor sit amet, <span className={`${styles.highlight} ${styles.bigger}`}>consectetur adipiscing elit</span>, sed do
+              eiusmod tempor incididunt ut <span className={styles.underline}>labore et dolore</span> magna 
+              aliqua. Ut enim ad minim veniam, <span className={styles.underline}>quis nostrud exercitation</span> ullamco laboris.
+              <br /><br />
+              Duis aute irure dolor in <span className={styles.accent}>reprehenderit in voluptate</span> velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+              sunt in culpa qui officia deserunt mollit anim id est laborum. &nbsp; 
+              <span className={styles.accent}>~Azazal</span>
+            </p>
+          </div>
         </div>
       </section>
     </div>
