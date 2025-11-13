@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Lorem Ipsum Dolor",
+    "artist": "Consectetur Adipiscing",
+    "coverArt": "releases/lorem-ipsum-dolor.jpg",
+    "releaseDate": "January 2025",
+    "youtubeUrl": "https://youtube.com",
+    "spotifyUrl": "https://spotify.com",
+    "soundcloudUrl": "https://soundcloud.com",
+    "hypeeditUrl": "https://hypeedit.com",
+    "isNewRelease": true
+  },
+  {
+    "title": "Sit Amet Consectetur",
+    "artist": "Consectetur Adipiscing",
+    "coverArt": "releases/sit-amet-consectetur.jpg",
+    "releaseDate": "December 2024",
+    "youtubeUrl": "https://youtube.com",
+    "spotifyUrl": "https://spotify.com",
+    "soundcloudUrl": "https://soundcloud.com",
+    "hypeeditUrl": "https://hypeedit.com",
+    "isNewRelease": true
+  },
+  {
+    "title": "Adipiscing Elit Sed",
+    "artist": "Consectetur Adipiscing",
+    "coverArt": "releases/adipiscing-elit-sed.jpg",
+    "releaseDate": "November 2024",
+    "youtubeUrl": "https://youtube.com",
+    "spotifyUrl": "https://spotify.com",
+    "soundcloudUrl": null,
+    "hypeeditUrl": "https://hypeedit.com",
+    "isNewRelease": false
+  },
+  {
+    "title": "Tempor Incididunt Labore",
+    "artist": "Consectetur Adipiscing",
+    "coverArt": "releases/tempor-incididunt-labore.jpg",
+    "releaseDate": "October 2024",
+    "youtubeUrl": "https://youtube.com",
+    "spotifyUrl": "https://spotify.com",
+    "soundcloudUrl": "https://soundcloud.com",
+    "hypeeditUrl": "https://hypeedit.com",
+    "isNewRelease": false
+  },
+  {
+    "title": "Magna Aliqua Enim",
+    "artist": "Consectetur Adipiscing",
+    "coverArt": "releases/magna-aliqua-enim.jpg",
+    "releaseDate": "September 2024",
+    "youtubeUrl": null,
+    "spotifyUrl": "https://spotify.com",
+    "soundcloudUrl": "https://soundcloud.com",
+    "hypeeditUrl": "https://hypeedit.com",
+    "isNewRelease": false
+  },
+  {
+    "title": "Veniam Quis Nostrud",
+    "artist": "Consectetur Adipiscing",
+    "coverArt": "releases/veniam-quis-nostrud.jpg",
+    "releaseDate": "August 2024",
+    "youtubeUrl": "https://youtube.com",
+    "spotifyUrl": "https://spotify.com",
+    "soundcloudUrl": "https://soundcloud.com",
+    "hypeeditUrl": null,
+    "isNewRelease": false
+  }
+]

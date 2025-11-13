@@ -1,0 +1,289 @@
+@import "../../vars.css";
+
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 250px;
+  background: var(--color-dark);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.3;
+  transform: translateX(-50%) scale(0.8) rotateY(25deg);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* Position states */
+.far-left {
+  left: -10%;
+  z-index: 1;
+  transform: translateX(-50%) scale(0.7) rotateY(30deg);
+  filter: blur(2px);
+  opacity: 0;
+}
+
+.left {
+  left: 25%;
+  z-index: 2;
+  transform: translateX(-50%) scale(0.85) rotateY(25deg);
+  opacity: 0.5;
+}
+
+.center {
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) scale(1) rotateY(0deg);
+  opacity: 1;
+}
+
+.center.active {
+  box-shadow: 0 20px 60px rgba(var(--color-accent-1-rgb), 0.4);
+}
+
+.right {
+  left: 75%;
+  z-index: 2;
+  transform: translateX(-50%) scale(0.85) rotateY(-25deg);
+  opacity: 0.5;
+}
+
+.far-right {
+  left: 110%;
+  z-index: 1;
+  transform: translateX(-50%) scale(0.7) rotateY(-30deg);
+  filter: blur(2px);
+  opacity: 0;
+}
+
+.newBadge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, var(--color-accent-1) 0%, var(--color-accent-2) 100%);
+  color: var(--color-text-primary);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  z-index: 3;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Left section - Cover Art */
+.leftSection {
+  position: relative;
+  width: 250px;
+  height: 100%;
+  flex-shrink: 0;
+  background: var(--color-secondary);
+  overflow: hidden;
+}
+
+.coverArt {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.active .overlay {
+  opacity: 1;
+}
+
+.active .coverArt {
+  transform: scale(1.1);
+  filter: blur(2px);
+}
+
+.playButton {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--color-accent-1);
+  color: var(--color-text-primary);
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+.playButton:hover {
+  transform: scale(1.1);
+  background: var(--color-accent-2);
+}
+
+/* Right section - Info and Links */
+.rightSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  justify-content: space-between;
+}
+
+.info {
+  flex: 1;
+}
+
+.songTitle {
+  color: var(--color-text-secondary);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.artist {
+  color: var(--color-accent-2);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.releaseDate {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.active .link {
+  opacity: 1;
+}
+
+.link:hover {
+  transform: translateX(10px);
+  opacity: 1;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-text-primary);
+  flex-shrink: 0;
+}
+
+.linkText {
+  color: var(--color-text-primary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.youtube {
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid #FF0000;
+}
+
+.youtube:hover {
+  background: rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+.spotify {
+  background: rgba(29, 185, 84, 0.2);
+  border: 1px solid #1DB954;
+}
+
+.spotify:hover {
+  background: rgba(29, 185, 84, 0.3);
+  box-shadow: 0 0 15px rgba(29, 185, 84, 0.3);
+}
+
+.soundcloud {
+  background: rgba(255, 136, 0, 0.2);
+  border: 1px solid #FF8800;
+}
+
+.soundcloud:hover {
+  background: rgba(255, 136, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 136, 0, 0.3);
+}
+
+.hypeedit {
+  background: rgba(123, 47, 247, 0.2);
+  border: 1px solid #7B2FF7;
+}
+
+.hypeedit:hover {
+  background: rgba(123, 47, 247, 0.3);
+  box-shadow: 0 0 15px rgba(123, 47, 247, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90vw;
+    max-width: 500px;
+    height: 220px;
+  }
+
+  .leftSection {
+    width: 200px;
+  }
+
+  .songTitle {
+    font-size: 20px;
+  }
+
+  .artist {
+    font-size: 16px;
+  }
+
+  .links {
+    gap: 8px;
+  }
+
+  .link {
+    padding: 6px 12px;
+  }
+}
