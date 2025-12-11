@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState, useMemo, useId, FC } from 'react';
+import { useRef, useEffect, useState, useMemo, useId } from 'react';
 import styles from './ScrollingText.module.css';
 
 interface ScrollingTextProps {
@@ -10,7 +10,7 @@ interface ScrollingTextProps {
   color?: 'primary' | 'secondary';
 }
 
-const ScrollingText: FC<ScrollingTextProps> = ({
+const ScrollingText = ({
   marqueeText = 'Placeholder',
   speed = 2,
   className = '',
