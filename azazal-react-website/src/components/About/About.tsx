@@ -2,6 +2,7 @@ import styles from "./About.module.css";
 
 import { getAssetUrl } from "../../utils";
 import { useBounceClickAnimation } from "./scripts/bounce-click-animation";
+import CurvedLoop from "../ScrollingText/ScrollingText";
 
 
 export const About = () => {
@@ -15,6 +16,12 @@ export const About = () => {
 
   return (
     <div className={styles.backgroundColor}>
+        <CurvedLoop 
+          marqueeText="Azazal Meow"
+          color="secondary"
+           curveAmount={100}
+        />
+
       <section className={styles.container} id="about">
         <h2 className={styles.title}>About Me</h2>
         <div className={styles.content}>
