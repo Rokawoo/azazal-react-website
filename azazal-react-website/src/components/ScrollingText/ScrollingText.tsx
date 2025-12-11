@@ -29,7 +29,7 @@ const ScrollingText: FC<ScrollingTextProps> = ({
   const [offset, setOffset] = useState(0);
   const uid = useId();
   const pathId = `curve-${uid}`;
-  const pathD = "M-100,-21.5 Q160,-4 370,-5 Q540,-8 720,-17 Q900,-27 1030,-27 Q1210,-30 1540,-7";
+  const pathD = "M-100,-21.5 Q160,-4 370,-5 Q540,-5 720,-15.5 Q900,-25.1 1030,-25 Q1230,-30 1540,-7.5";
   const dirRef = useRef<'left' | 'right'>(direction);
   const animationRef = useRef<number>(0);
 
