@@ -17,7 +17,7 @@ export const About = () => {
   return (
     <div className={styles.backgroundColor}>
         <CurvedLoop 
-          marqueeText="Azazal Meow"
+          marqueeText="Azazal Meow ฅ^>⩊<^ฅ"
           color="secondary"
            curveAmount={100}
         />

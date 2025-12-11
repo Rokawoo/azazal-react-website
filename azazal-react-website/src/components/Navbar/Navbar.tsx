@@ -37,7 +37,7 @@ export const Navbar = () => {
                             <a href="#socials">[Socials]</a>
                         </li>
                         <li className={styles.menuItem}>
-                            <a href="#media">[ Media ]</a>
+                            <a href="#fanart">[ Fan Art ]</a>
                         </li>
                         <li className={styles.menuItem}>
                             <a href="#store">[Store]</a>
