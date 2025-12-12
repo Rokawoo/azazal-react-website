@@ -19,7 +19,7 @@ export const About = () => {
         <CurvedLoop 
           marqueeText="Azazal Meow ฅ^>⩊<^ฅ"
           color="secondary"
-           curveAmount={100}
+          waveBackground
         />
 
       <section className={styles.container} id="about">
