@@ -2,7 +2,7 @@ import styles from "./About.module.css";
 
 import { getAssetUrl } from "../../utils";
 import { useBounceClickAnimation } from "./scripts/bounce-click-animation";
-import CurvedLoop from "../ScrollingText/ScrollingText";
+import ScrollingText from "../ScrollingText/ScrollingText";
 
 
 export const About = () => {
@@ -16,11 +16,10 @@ export const About = () => {
 
   return (
     <div className={styles.backgroundColor}>
-        <CurvedLoop 
-          marqueeText="Azazal Meow ฅ^>⩊<^ฅ"
-          color="secondary"
-        />
-
+      <ScrollingText 
+        marqueeText="Azazal Meow ฅ^>⩊<^ฅ"
+        color="secondary"
+      />
       <section className={styles.container} id="about">
         <h2 className={styles.title}>About Me</h2>
         <div className={styles.content}>
@@ -35,14 +34,14 @@ export const About = () => {
           />
           <div className={styles.textBox}>
             <p>
-              Lorem ipsum dolor sit amet, <span className={`${styles.highlight} ${styles.bigger}`}>consectetur adipiscing elit</span>, sed do
-              eiusmod tempor incididunt ut <span className={styles.underline}>labore et dolore</span> magna 
-              aliqua. Ut enim ad minim veniam, <span className={styles.underline}>quis nostrud exercitation</span> ullamco laboris.
-              <br /><br />
-              Duis aute irure dolor in <span className={styles.accent}>reprehenderit in voluptate</span> velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-              sunt in culpa qui officia deserunt mollit anim id est laborum. &nbsp; 
-              <span className={styles.accent}>~Azazal</span>
+              meow! welcome to my website~
+              <br /> <br />
+              im <span className={`${styles.accent} ${styles.bigger}`}>Azazal</span>, also known as '<span className={styles.underline}>azazal meow</span>'.
+              im a <span className={styles.accent}>demon cat</span>, music producer, youtuber and streamer.
+              i enjoy going on <span className={styles.accent}>adventures</span>, playing <span className={styles.accent}>games</span>, listening to energetic <span className={styles.accent}>music</span>, and <span className={styles.underline}>making people smile</span>. 
+              <br /> <br />
+              here you'll find my <span className={styles.underline}>shop</span>, <span className={styles.underline}>latest releases</span>, <span className={styles.underline}>contact info</span>, and <span className={styles.underline}>ameowzing fanart</span> from all kinds of <span className={styles.accent}>talented artists</span>.
+              hope you enjoy your stay!
             </p>
           </div>
         </div>
