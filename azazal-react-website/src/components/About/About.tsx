@@ -19,7 +19,6 @@ export const About = () => {
         <CurvedLoop 
           marqueeText="Azazal Meow ฅ^>⩊<^ฅ"
           color="secondary"
-          waveBackground
         />
 
       <section className={styles.container} id="about">
