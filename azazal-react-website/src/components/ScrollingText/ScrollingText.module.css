@@ -35,23 +35,3 @@
 .secondary {
   fill: var(--color-secondary);
 }
-
-@media (max-width: 768px) {
-  .container {
-    height: 60px;
-  }
-
-  .text {
-    font-size: 34px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    height: 45px;
-  }
-
-  .text {
-    font-size: 24px;
-  }
-}
